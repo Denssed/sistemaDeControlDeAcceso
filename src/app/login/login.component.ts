@@ -24,7 +24,7 @@ export class LoginComponent {
       const email = this.loginForm.value.email
       const password = this.loginForm.value.password
       if (this.auth.login(email, password)){
-        this.router.navigate(['/'])
+        this.router.navigate(['navigation'])
       } else {
         alert("Email o Contraseña erronea.")
       }
