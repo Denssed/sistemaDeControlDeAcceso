@@ -6,9 +6,9 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { VisitComponent } from './visit/visit.component';
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
+  { path: '', component: LoginComponent },
   {
-    path: '',
+    path: 'navigation',
     component: NavigationComponent,
     children: [
       { path: 'registro', component: RegistrationComponent },
